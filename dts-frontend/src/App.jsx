@@ -3,7 +3,7 @@ import './App.css';
 import CreateTaskForm from './components/ModalForms/CreateTaskForm';
 import Modal from './components/ModalForms/Modal';
 import taskService from './services/taskServices';
-import ViewTaskForm from './components/ModalForms/ViewForm';
+import TaskForm from './components/ModalForms/TaskForm';
 import TaskList from './components/TaskList/TaskList';
 import Pagination from './components/TaskList/Pagination';
 import { DEFAULT_PAGE_SIZE, DEFAULT_ORDER_BY } from './helpers/config';
@@ -98,7 +98,7 @@ function App() {
         {/* View Modal */}
         {showViewModal && currentTask && (
           <Modal onClose={() => {setShowViewModal(false); setCurrentTask(null); setViewFormMessage(null);}}>
-            <ViewTaskForm task={currentTask} message={viewFormMessage}/>
+            <TaskForm task={currentTask} message={viewFormMessage}/>
           </Modal>
         )}      
 

@@ -1,7 +1,7 @@
 import "./TaskForm.css";
 import { formatStatus, formatDate } from "../../helpers/helpers";
 
-function ViewTaskForm({ task, message }) {
+function TaskForm({ task, message }) {
   if (!task) return null;
 
   return (
@@ -30,4 +30,4 @@ function ViewTaskForm({ task, message }) {
   );
 }
 
-export default ViewTaskForm;
+export default TaskForm;
