@@ -44,14 +44,14 @@ e.g. `GET /api/tasks`
 {
   "page": 0,
   "size": 1,
-  "orderBy": "createdAt",
+  "orderBy": "creationDate",
   "ascending": true
 }
 ```
 
 Valid orderBy options are:
 
-- createdAt
+- creationDate
 - dueDate
 
 ### POST endpoint

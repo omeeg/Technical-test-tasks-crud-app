@@ -6,7 +6,6 @@ import com.example.dts.data.repositories.TaskEntityRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.dao.DataIntegrityViolationException;
 
 import java.time.LocalDateTime;
 
@@ -32,6 +31,6 @@ public class TaskEntityRepositoryTest {
 
         TaskEntity retrieved = taskRepository.findById(saved.getId()).orElseThrow();
         assertThat(retrieved.getTitle()).isEqualTo("Test task");
-        assertThat(retrieved.getCreatedAt()).isNotNull();
+        assertThat(retrieved.getCreationDate()).isNotNull();
     }
 }

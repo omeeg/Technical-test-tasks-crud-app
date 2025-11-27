@@ -13,13 +13,13 @@ public class TaskEntity {
     public TaskEntity() {
     }
 
-    public TaskEntity(Long id, String title, String description, TaskStatus status, LocalDateTime dueDate, LocalDateTime createdAt) {
+    public TaskEntity(Long id, String title, String description, TaskStatus status, LocalDateTime dueDate, LocalDateTime creationDate) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.status = status;
         this.dueDate = dueDate;
-        this.createdAt = createdAt;
+        this.creationDate = creationDate;
     }
 
     @Id
@@ -43,11 +43,11 @@ public class TaskEntity {
     private LocalDateTime dueDate;
 
     @Column(nullable = false, updatable = false)
-    private LocalDateTime createdAt;
+    private LocalDateTime creationDate;
 
     @PrePersist
     protected void onCreate() {
-        createdAt = LocalDateTime.now();
+        creationDate = LocalDateTime.now();
     }
 
     public Long getId() {
@@ -70,8 +70,8 @@ public class TaskEntity {
         return dueDate;
     }
 
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
+    public LocalDateTime getCreationDate() {
+        return creationDate;
     }
 
     public void setId(Long id) {
@@ -94,7 +94,7 @@ public class TaskEntity {
         this.dueDate = dueDate;
     }
 
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
+    public void setCreationDate(LocalDateTime creationDate) {
+        this.creationDate = creationDate;
     }
 }

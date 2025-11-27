@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
  * @param description - description of task
  * @param status - status of task i.e. TO_DO, IN_PROGRESS or COMPLETED
  * @param dueDate - date when task is due
- * @param createdAt - date when task is created
+ * @param creationDate - date when task is created
  */
 public record Task(
         Long id,
@@ -22,7 +22,7 @@ public record Task(
         String description,
         TaskStatus status,
         LocalDateTime dueDate,
-        LocalDateTime createdAt)
+        LocalDateTime creationDate)
 {
     public static Task convertTaskEntityToTask(TaskEntity task) {
         return new Task(
@@ -31,7 +31,7 @@ public record Task(
                 task.getDescription(),
                 task.getStatus(),
                 task.getDueDate(),
-                task.getCreatedAt()
+                task.getCreationDate()
         );
     }
 }

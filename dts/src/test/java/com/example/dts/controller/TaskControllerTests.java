@@ -72,7 +72,7 @@ public class TaskControllerTests {
                 .andExpect(jsonPath("$.description").value("Sample Description"))
                 .andExpect(jsonPath("$.status").value("TO_DO"))
                 .andExpect(jsonPath("$.dueDate").exists())
-                .andExpect(jsonPath("$.createdAt").exists());
+                .andExpect(jsonPath("$.creationDate").exists());
 
         verify(taskService, times(1)).createTask(any(CreateTaskRequest.class));
     }

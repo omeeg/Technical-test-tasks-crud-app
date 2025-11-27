@@ -46,7 +46,7 @@ public class TaskServiceTests {
         testTaskEntity.setDescription("Description of Task");
         testTaskEntity.setStatus(TaskStatus.TO_DO);
         testTaskEntity.setDueDate(futureDate);
-        testTaskEntity.setCreatedAt(LocalDateTime.now());
+        testTaskEntity.setCreationDate(LocalDateTime.now());
     }
 
     //Create tests
