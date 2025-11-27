@@ -1,0 +1,4 @@
+const DEFAULT_PAGE_SIZE = 5;
+const DEFAULT_ORDER_BY = "createdAt";
+
+export { DEFAULT_PAGE_SIZE, DEFAULT_ORDER_BY };

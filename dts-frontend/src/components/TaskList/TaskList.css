@@ -1,0 +1,91 @@
+.table-container {
+  margin: 20px auto;
+  max-width: 90%;
+  overflow-x: auto;
+}
+
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.list-table thead {
+  background-color: lightgrey;
+  color: black;
+  text-align: left;
+}
+
+.list-table th,
+.list-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.list-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.list-table tbody tr:hover {
+  background-color: #e3f2fd;
+  cursor: pointer;
+}
+
+.list-table button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.list-table button:hover {
+  background-color: darkgreen;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: lightblue;
+}
+
+.order-by-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.order-by-container select {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.order-by-container select:hover {
+  background-color: lightblue;
+}

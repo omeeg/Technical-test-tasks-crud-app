@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+  background-color: white;
+}
+
+.App-header {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Title-header {
+  color: black;
+}
+
+
+.create-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.create-button:hover {
+  background-color: darkblue;
+}

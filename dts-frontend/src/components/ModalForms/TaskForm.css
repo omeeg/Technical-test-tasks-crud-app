@@ -1,0 +1,77 @@
+.create-task-container {
+  max-width: 560px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.create-task-container h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form-group {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  margin: 0 auto; /* Centering inputs */
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 90%;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  width: 80%; /* Slightly smaller than inputs */
+  padding: 12px;
+  background: blue;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: darkblue;
+}
+
+.view-task-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.view-task-container .form-group {
+  margin-bottom: 15px;
+}
+
+.view-task-container .form-group label {
+  font-weight: 600;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.view-task-container .form-group p {
+  margin: 0;
+  padding: 8px 12px;
+  background: lightgrey;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  word-wrap: break-word; 
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  max-height: 400px; 
+  overflow-y: auto; /* scroll if content too tall */
+}
