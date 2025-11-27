@@ -79,7 +79,7 @@ Response Body:
   "description": "The Table Row Component needs refactoring - it is too embedded abstract the service logic out of this component.",
   "status": "TO_DO",
   "dueDate": "2026-02-28T12:45:00",
-  "createdAt": "2025-11-27T12:47:09"
+  "creationDate": "2025-11-27T12:47:09"
 }
 ```
 
